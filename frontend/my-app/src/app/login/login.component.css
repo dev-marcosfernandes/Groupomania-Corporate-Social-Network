@@ -1,0 +1,85 @@
+body{
+    width: 270px;
+}
+
+form{
+    position: relative;
+    bottom: 40px;
+    margin-top: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+@media screen and (max-width: 414px){
+    form{
+        margin-left: -50px;
+       
+    }
+}
+
+a{
+    text-decoration: none;
+    color: rgb(137, 194, 221);
+}
+
+label{
+    position: relative;
+    top: 20px;
+    left: 40px;
+   
+}
+
+
+input{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.anime2{
+
+    
+    width: 80px;
+    background-color: #FFF;
+    color: rgb(137, 194, 221);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    position: relative;
+    left: 120px;
+    top: 40px;
+    
+}
+
+.inscription{
+    font-size: 12px;
+    position: relative;
+
+   left: 90px;
+   color: rgb(238, 190, 198);
+}
+
+.inscription a{
+
+    text-decoration: none;
+    color: rgb(238, 190, 198);
+}
+
+p{
+   
+    width: 300px;
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 414px){
+    p{
+        position: relative;
+        right: 100px;
+    }
+}

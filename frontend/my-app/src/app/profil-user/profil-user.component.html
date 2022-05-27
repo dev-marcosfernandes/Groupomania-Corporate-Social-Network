@@ -1,0 +1,19 @@
+<body>
+    <app-timeline-header></app-timeline-header>
+    <div class="container-profil">
+        <div class="photo"><img [src]="photo" style="display: none" onload="this.style.display=''" alt=""></div>
+        <h1>{{prenom}} {{nom}}</h1>
+        <h3>{{email}}</h3>
+    </div>
+    <div class="posts" *ngFor='let post of post.slice().reverse()'>
+        <a [routerLink]="['/posts', post.id]">
+            <div class="titre">{{ post.titre }}</div>
+        </a>
+        <div class="texte">{{ post.texte }}</div>
+        <div class="images"><img [src]="post.imageUrl" style="display: none" onload="this.style.display=''" alt=""></div>
+    </div>
+    <div *ngIf="visibility()" class="anime"><button class="anime2" (click)="deleteUserQuestion()">Supprimer cet
+        utilisateur</button>
+    </div>
+    <app-footer></app-footer>
+</body>

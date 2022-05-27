@@ -1,0 +1,40 @@
+<body>
+    <app-timeline-header></app-timeline-header>
+    <div class="container-post">
+        <h1>{{titre}}</h1>
+        <h3>{{texte}}</h3>
+        <div class="images"><img [src]="imageUrl" style="display: none" onload="this.style.display=''" alt=""></div>
+
+        <div class="profil-auteur">
+            <a [routerLink]="['/profil', user_id]">
+                <div><img class="photo-profil" [src]="photo" style="display: none" onload="this.style.display=''"
+                        alt=""></div>
+                <div class="auteur">{{prenom}} {{nom}}</div>
+            </a>
+        </div>
+        <div class="time">{{time | date: "d-M-y H:m:s"  }}</div>
+    </div>
+
+    <div *ngIf="visibility()" class="anime"><button class="anime2" (click)="deletePostQuestion()">
+        <fa-icon class="trash" [icon]="faTrash"></fa-icon>
+    </button></div>
+
+    <form [formGroup]="comment" (ngSubmit)="postComment()">
+        <label for="texte"></label><br>
+        <input type="text" formControlName="texte" class="form-group" placeholder="Laissez un commentaire" id="comment"
+            name="texte">
+        <label for="post_id"></label><br>
+        <input type="text" [value]="postId" formControlName="post_id" class="form-group" id="post_id" name="texte">
+        <button type="submit" id="comment-button">Commenter</button>
+    </form>
+
+    <div class="comment-boxing" *ngFor='let commentaire of commentaire'>
+        <a [routerLink]="['/comments', commentaire.id]">
+            <div class="texte-comment">
+                {{commentaire.texte}}
+            </div>
+        </a>
+    </div>
+  <app-footer></app-footer>
+ 
+</body>

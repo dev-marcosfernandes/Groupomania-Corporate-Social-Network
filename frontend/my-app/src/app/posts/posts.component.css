@@ -1,0 +1,308 @@
+body {
+  background-color: rgb(158, 202, 223);
+  /* padding-bottom: 80px; */
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.profil-auteur a{
+  color: rgb(100, 154, 179);
+}
+
+a :hover{
+  color: rgb(205, 136, 136);
+}
+
+.comment-boxing a :hover{
+  opacity: 100%;
+  transition: ease;
+}
+
+.comment-boxing a{
+ color: black;
+}
+
+.comment-boxing{
+  padding-top: 10px;
+  text-align: center;
+  max-width: 350px;
+  position: relative;
+  top: 50px;
+  left: 520px;
+  height: 80px;
+  margin-top: 20px;
+  /* margin-bottom: 100px; */
+}
+
+app-footer{
+  position: relative;
+  top: 200px;
+}
+
+.container-post {
+  margin-left: 35%;
+  text-align: center;
+  margin-top: 200px;
+  max-width: 400px;
+  margin-top: 60px;
+  overflow: hidden;
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  padding: 30px;
+  border-radius: 15px;
+  opacity: 95%;
+
+}
+
+
+
+/* .teste{
+  border: solid black;
+} */
+
+img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.profil-auteur{
+  border-top: 1px solid rgb(158, 202, 223);
+    position: relative;
+  top: 40px;
+  padding-bottom: 30px;
+}
+
+
+.photo-profil{
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 15px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 1px solid rgb(100, 154, 179);
+}
+
+@media screen and (max-width: 820px) {
+  .container-post {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container-post {
+    margin-left: 2%;
+  }
+}
+
+.time{
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+
+/* .comment-box {
+ 
+  text-align: center;
+  max-width: 350px;
+  position: relative;
+  top: 50px;
+  left: 520px;
+  height: 80px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+} */
+
+@media screen and (max-width: 820px) {
+  .comment-boxing {
+    left: 230px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .comment-boxing {
+    left: 30px;
+  }
+}
+
+
+/* .comment-box a {
+  text-decoration: none;
+  color: black;
+}
+
+.comment-box :hover {
+  opacity: 100%;
+
+} */
+
+
+
+h3 {
+  border-top: 1px solid rgb(158, 202, 223);
+  padding-top: 20px;
+}
+
+#post_id {
+  position: relative;
+  top: 280px;
+  left: 630px;
+}
+
+@media screen and (max-width: 820px) {
+  #post_id {
+    left: -450px;
+  }
+}
+
+#comment-button {
+  position: relative;
+  top: 240px;
+  left: 780px;
+}
+
+@media screen and (max-width: 820px) {
+  #comment-button {
+    left: 780px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #comment-button {
+    left: 520px;
+    top: 300px;
+  }
+}
+
+form {
+  position: relative;
+  bottom: 250px;
+}
+
+@media screen and (max-width: 820px) {
+  form {
+    right: 300px;
+  }
+}
+
+
+@media screen and (max-width: 414px) {
+  form {
+    right: 495px;
+  }
+}
+
+
+
+.texte-comment{
+  font-size: 14px;
+  position: relative;
+  max-width: 350px;
+  overflow: hidden;
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: 70%;
+}
+
+#comment {
+  position: relative;
+  top: 280px;
+  left: 505px;
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgb(187, 185, 185);
+  padding-left: 4px;
+}
+
+button {
+  font-family: Poppins;
+  font-size: 12px;
+  background-color: rgb(137, 173, 226);
+  border: 1px solid #FFF;
+  border-radius: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.anime2 {
+  cursor: pointer;
+  background-color: rgb(205, 136, 136);
+  position: relative;
+  left: 680px;
+  top: 30px;
+  font-size: 25px;
+  border-radius: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+@media screen and (max-width: 820px) {
+  .anime2 {
+    left: 380px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .anime2 {
+    left: 180px;
+  }
+}
+
+
+.parametres {
+
+  display: flex;
+  flex-direction: row;
+  width: 20px;
+  position: relative;
+  left: 10px;
+  top: 25px;
+}
+
+
+.config {
+  position: relative;
+  top: 2px;
+  left: 10px;
+  border-bottom: 1px solid #FFF;
+  padding-right: 20px;
+}
+
+
+#post_id {
+  visibility: hidden;
+}
+
+
+.auteur {
+  font-size: 14px;
+
+
+}
+
+.faHome {
+  background-color: #FFF;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.trash {
+  padding-bottom: 50px;
+}

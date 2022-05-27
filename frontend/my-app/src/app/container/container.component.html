@@ -1,0 +1,31 @@
+
+<div class="container">
+    <h1>Inscription :</h1>
+    <form [formGroup]="register" (ngSubmit)="collection()">
+      <div class="form-group">
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" required minlength="2" formControlName="prenom" class="form-group" placeholder="Insérez un prénom" id="prenom" name="prenom" #prenom required><br>
+        <div class="erreur" *ngIf="(register.touched)">Insérer votre prénom</div>
+      </div> 
+      <div class="form-group">
+        <label for="nom">Nom :</label><br>
+        <input type="text" formControlName="nom" class="form-group" placeholder="Insérez un nom"  id="nom" name="nom" required><br>
+        <div class="erreur" *ngIf="(register.touched)">Insérez votre nom</div>
+      </div>
+      <div class="form-group">
+        <label for="fname">Email :</label><br>
+        <input type="text" formControlName="email" class="form-group" placeholder="Insérez un email"  id="email" name="email" required><br>
+        <div class="erreur" *ngIf="(register.touched)">Saisissez une adresse mail valide</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password :</label><br>
+        <input type="password" formControlName="password" class="form-group" placeholder="Insérez un mot de passe"  id="password" name="password" required >
+        <div class="erreur" *ngIf="(register.touched)">Minimum 8 caractères avec une majuscule et un chiffre</div>
+      </div>
+      <button type="submit" class="anime2">S'inscrire</button>
+      </form>
+      <div class="anime">
+     
+    </div>
+</div>
+

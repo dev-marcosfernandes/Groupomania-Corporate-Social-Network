@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+.container {
+      position: relative;
+      top: 50px;
+      left: 400px;
+      width: 400px;
+      margin-top: 60px;
+      overflow: hidden;
+      min-height: 500px;
+      background-color: rgb(100, 154, 179);
+      border: 2px solid #FFF;
+      padding: 30px;
+      border-radius: 15px;
+      opacity: 95%;
+}
+
+.erreur{
+      color: rgb(96, 207, 144);
+      position: relative;
+      bottom: 15px;
+}
+
+@media screen and (max-width: 820px) {
+      .container {
+            left: 10px;
+            top: 150px;
+      }
+}
+
+@media screen and (max-width: 414px) {
+      .container {
+            width: 300px;
+      }
+}
+
+::placeholder {
+      font-family: Poppins;
+}
+
+label {
+      font-size: 18px;
+      margin-top: 20px;
+}
+
+input {
+      margin-top: 5px;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      width: 250px;
+}
+
+.anime {
+
+      transition-property: all;
+}
+
+.anime:hover .anime2 {
+      transform: scale(1.2);
+      transition-timing-function: ease;
+}
+
+.anime2 {
+      transition-duration: 500ms;
+}
+
+form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+h1 {
+      position: relative;
+      bottom: 10px;
+}
+
+h2 {
+      text-align: center;
+      position: relative;
+      top: 20px;
+}
+
+button {
+      width: 100px;
+      background-color: #FFF;
+      color: rgb(137, 194, 221);
+      border: none;
+      border-radius: 15px;
+      font-size: 18px;
+      position: relative;
+      top: 10px;
+      left: 120px;
+
+}
+
+@media screen and (max-width: 414px) {
+      button {
+            left: 70px;
+      }
+}

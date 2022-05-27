@@ -1,0 +1,19 @@
+
+
+<form action="post" [formGroup]="register" (ngSubmit)="onClick()">
+    <label for="email">Email :</label><br>
+    <input type="text" name="email"formControlName="email" class="form-group" required />
+    <label for="password">Password :</label><br>
+    <input type="password" name="password"  formControlName="password" class="form-group" required />
+    <button type="submit" class="anime2">Login</button>
+  </form>
+
+  <div class="inscription">
+      <a routerLink="/inscription">
+       
+      <p>Vous n'êtes pas encore inscrit ? Cliquez ici !</p>
+      </a>
+  </div>
+
+
+  

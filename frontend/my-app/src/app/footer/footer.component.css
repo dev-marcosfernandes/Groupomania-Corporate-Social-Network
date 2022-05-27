@@ -1,0 +1,19 @@
+.footer-container{
+    text-align: center;
+    position: relative;
+    top: 80px;
+    background-color: #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("icon-left-font-monochrome-white.png");
+}
+
+@media screen and (max-width: 820px) {
+    .footer-container {
+      top: 200px;
+    }
+  }
+
+h1{
+    font-size: 15px;
+}

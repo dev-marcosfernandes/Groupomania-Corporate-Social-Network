@@ -1,0 +1,16 @@
+<body>
+    <app-timeline-header></app-timeline-header>
+    <div class="container-post">
+
+        <h1>{{texte}}</h1>
+    
+        <div class="profil-auteur">
+            <a [routerLink]="['/profil', id]">
+        <div><img class="photo-profil" [src]="photo" style="display: none" onload="this.style.display=''" alt=""></div>
+        <div class="auteur">{{prenom}} {{nom}}</div>
+    </a>
+        </div>
+    </div>
+    <div *ngIf="visibility()" class="anime"><button class="anime2"(click)="deleteCommentQuestion()"><fa-icon class="trash" [icon]="faTrash"></fa-icon></button></div> 
+    <app-footer></app-footer>
+</body>
